@@ -1,0 +1,864 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+.header .logo img {
+    height: 100px;
+}
+
+.header .agency-name h1 {
+    margin: 0;
+}
+
+.header-nav a {
+    color: #fff;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.header-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 15%;
+    background-color: #ffffff;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 1rem;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 0.5rem;
+}
+
+.sidebar a:hover {
+    background-color: #ddd;
+}
+
+/* Main Content Styles */
+.main-content {
+    width: 85%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+
+}
+
+.footer-logo img {
+    height: 30px;
+}
+
+.footer-text a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-text a:hover {
+    text-decoration: none;
+}
+
+/* Form and Input Styles */
+input:focus {
+    background-color: #eef;
+}
+
+.error {
+    color: red;
+    background-color: #fdd;
+    border: 1px solid red;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+/* External Links */
+a:link {
+    color: rgb(206, 122, 206);
+    text-decoration: underline;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+/* Image List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: url('carsImages\logoca.png') no-repeat left center;
+    padding-left: 20px;
+}
+form {
+    max-width: 600px;
+    margin: -150px auto 0; /* top margin of 20px, auto for horizontal centering, 0 for bottom */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Change background on focus */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+    background-color: #e6f7ff;
+    border-color: #66afe9;
+    outline: none;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+
+}
+fieldset {
+    border: 1px solid #cccccc; /* Border color and thickness */
+    padding: 20px; /* Padding inside the fieldset */
+    margin-bottom: 20px; /* Bottom margin to separate fieldsets */
+    background-color: #f9f9f9; /* Background color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Legend styling inside fieldset */
+legend {
+    font-size: 1.2em; /* Larger font size for legend */
+    font-weight: bold; /* Bold text for legend */
+    margin-bottom: 10px; /* Bottom margin for separation */
+}
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 0;
+    border:#66afe9;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #e632c5;
+   
+}
+.success-message {
+    color: #4caf50; /* Green color for success message */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 10px; /* Bottom margin */
+}
+.error {
+    color: #f44336; /* Red color for error message */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 10px; /* Bottom margin */
+}
+.error em {
+    font-style: normal; /* Ensures <em> tag does not italicize the text */
+}
+figure {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin-bottom: 20px;
+}
+
+figure img {
+    width: 220px; /* Adjust size as needed */
+    margin-right: 20px; /* Space between image and details */
+}
+
+section {
+    flex: 1; /* Take remaining space */
+}
+.car-container {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    margin-bottom: 200px; /* Optional: Adjust margin between cars */
+}
+
+.car-image {
+    margin-left: 400px; /* Space between image and details */
+    margin-top: -370px;
+}
+
+/* styles.css */
+
+.car-details {
+    flex: 1; /* Take remaining width */
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: -400px;
+    padding: 20px; /* Add padding for better spacing */
+    background-color: #ccc;
+    border: 1px solid #ccc; /* Optional: Add a border for clarity */
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+.car-details h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px; /* Adjust margin for spacing */
+}
+
+.car-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.car-details ul li {
+    margin-bottom: 5px;
+    padding: 8px 12px; /* Add padding to create separation between list items */
+   
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.rentButton {
+    margin-top: 10px; /* Adjust top margin for button */
+    text-align: center; /* Center the button */
+}
+
+.rentButton button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue background color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.rentButton button:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+}
+.car-details form {
+    background-color: #ccc;
+}
+
+
+
+.rentButton {
+    margin-top: 180px; /* Adjust margin as needed */
+    margin-right: 800px;
+    text-align: center; /* Center the button */
+}
+
+.rentButton button {
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 1rem; /* Adjust font size as needed */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 5px; /* Rounded corners */
+}
+h3 {
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    color: #333; /* Text color */
+    margin-bottom: 10px; /* Bottom margin for spacing */
+    border-bottom: 2px solid #ccc; /* Bottom border */
+    padding-bottom: 5px; /* Padding bottom to separate content */
+}
+/* Base styles for the table */
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: -150px;
+    margin-left: 300px;
+    margin-bottom: 180px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #f2f2f2; /* Header background color */
+}
+
+/* Styles for different statuses */
+tr.future {
+    background-color: #28596e; /* Light blue for future rentals */
+    font-style: italic; /* Italic font for future rentals */
+}
+
+tr.current {
+    background-color: #25b908; /* Light salmon for current rentals */
+    font-weight: bold; /* Bold font for current rentals */
+}
+
+tr.past {
+    background-color: #5f0303; /* Light grey for past rentals */
+    color: #888; /* Dim text color for past rentals */
+}
+/* Reset and setup */
+/* Style for the form container */
+.formres {
+    width: 80%; /* Adjust width as needed */
+    margin: 20px auto; /* Center the container horizontally */
+    background-color: #ffffff; /* White background */
+    padding: 20px; /* Padding inside the container */
+   
+   
+}
+
+/* Style for the table */
+.formres table {
+    width: 100%; /* Full width of the container */
+    border-collapse: collapse; /* Remove space between table cells */
+    margin-top: 100px;
+    margin-left: 10px;
+}
+
+.formres table th,
+.formres table td {
+    padding: 10px; /* Padding inside table cells */
+    text-align: center; /* Center-align text in cells */
+    border: 1px solid #dddddd; /* Gray border around cells */
+}
+
+.formres table th {
+    background-color: #78738a; /* Green background for header */
+    color: #ffffff; /* White text color for header */
+
+}
+
+/* Style for the filter button */
+.formres button[type="submit"] {
+    padding: 8px 16px; /* Padding inside the button */
+    background-color: #a343b6; /* Green background */
+    color: #ffffff; /* White text color */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.formres button[type="submit"]:hover {
+    background-color: #c076cc; /* Darker green on hover */
+}
+
+/* Style for checkboxes */
+.formres input[type="checkbox"] {
+    transform: scale(1.5); /* Increase checkbox size */
+}
+
+/* Style for links */
+.formres a {
+    text-decoration: none; /* Remove underline */
+    color: #007bff; /* Blue link color */
+}
+
+.formres a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #0056b3; /* Darker blue on hover */
+}
+/* styles.css */
+
+.error-message {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    padding: 10px;
+    margin-left: 400px;
+    margin-right: 200px;
+    margin-top: -150px;
+    margin-bottom: 250px;
+    border-radius: 5px;
+}
+/* styles.css */
+
+.success-message {
+    background-color: #d4edda; /* Light green background */
+    color: #155724; /* Dark green text */
+    padding: 10px;
+    border: 1px solid #c3e6cb; /* Green border */
+    margin-bottom: 10px;
+}
+.login-form-container {
+    background-color: #fff;
+    padding: 0px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    margin-top: 170px;
+    margin-bottom: 150px;
+    margin-left: 600px;
+}
+
+.login-form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form-container label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-form-container input[type="text"],
+.login-form-container input[type="password"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form-container input[type="submit"] {
+    background-color: #921681;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form-container input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.regform {
+    background-color: #fff;
+    padding: 20px;
+    padding-top: 50px; /* Adjust as needed */
+    border-radius: 10px;
+    width: 400px; /* Adjust as needed */
+    text-align: center;
+    margin-top: 110px;
+    margin-left: 550px;
+}
+
+.regform form {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.regform label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.regform input[type="text"],
+.regform input[type="date"],
+.regform input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.regform button {
+    background-color: #801689;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.regform button:hover {
+    background-color: #5b3d5b;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+main {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.aboutus {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    margin-bottom: 100px;
+}
+
+.aboutus p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555555;
+}
+.locationform {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+   margin-top: -220px;
+    border-radius: 5px;
+}
+
+.locationform label {
+    display:block;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.locationform input[type="text"],
+.locationform input[type="tel"] {
+    display:block;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.locationform button {
+    padding: 10px 20px;
+    background-color: #892484;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.locationform button:hover {
+    background-color: #663f68;
+}
+/* styles.css */
+
+.returnform {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.returnform select {
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.returnform button {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.returnform button:hover {
+    background-color: #45a049;
+}
+.update-form {
+    margin: 0;
+    /* Other styles as needed */
+}
+.agency-name {
+    text-align: center; /* Aligns the content to the center */
+    padding: 20px; /* Padding around the content inside the div */
+    border-radius: 8px; /* Rounded corners for the div */
+}
+
+.agency-name h1 {
+    font-size: 32px; /* Example font size for the heading */
+    color: #eae6e6; /* Example text color */
+    margin: 0; /* Remove default margin */
+}
+/* styles.css */
+
+.addcar {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: -250px;
+}
+
+.addcar form {
+    font-family: Arial, sans-serif;
+}
+
+.addcar fieldset {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.addcar legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.addcar label {
+    display: block;
+    width: 150px;
+    margin-bottom: 5px;
+}
+
+.addcar input[type="text"],
+.addcar input[type="number"],
+.addcar input[type="file"],
+.addcar select {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding and border are included in width */
+}
+
+.addcar input[type="color"] {
+    vertical-align: middle; /* Align color input vertically */
+    margin-bottom: 10px;
+}
+
+.addcar input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #550556;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.addcar input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.addcar select {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding and border are included in width */
+}
+/* styles.css */
+
+.displaycardet {
+    max-width: 600px; /* Adjust maximum width as per your design */
+    margin: 20px auto; /* Center align horizontally with top and bottom margin */
+    padding: 20px; /* Padding inside the container */
+    border: 1px solid #ccc; /* Border around the container */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f0f0f0; /* Background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+.displaycardet form {
+    display: grid;
+    margin-top: -450px;
+   
+}
+
+.displaycardet label {
+    font-weight: bold; /* Bold font for labels */
+    display: inline-block;
+}
+
+.displaycardet input[type="text"],
+.displaycardet input[type="date"],
+.displaycardet input[type="number"],
+.displaycardet input[type="color"],
+.displaycardet input[type="file"],
+.displaycardet select {
+    padding: 8px; /* Padding inside inputs */
+    border-radius: 4px; /* Rounded corners for inputs */
+    font-size: 14px; /* Font size */
+    box-sizing:60px; /* Include padding and border in width calculation */
+}
+
+.displaycardet button[type="submit"] {
+    width: 100%; /* Full width button */
+    padding: 10px; /* Padding inside button */
+    background-color: #ac4caf; /* Green background */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 16px; /* Font size */
+}
+
+.displaycardet button[type="submit"]:hover {
+    background-color: #5d3e64; /* Darker green on hover */
+}
+/* styles.css */
+.profileform {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: -400px;
+    margin-bottom: 300px;
+    border-radius: 5px;
+}
+
+.profileform form {
+    display: flex;
+    flex-direction: column;
+}
+
+.profileform label {
+    margin-bottom: 10px;
+}
+
+.profileform input[type="text"],
+.profileform input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.profileform button {
+    padding: 10px 20px;
+    background-color: #9737b5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.profileform button:hover {
+    background-color: #98549b;
+}
+/* styles.css */
+
+.searchform {
+    max-width: 400px;
+    margin: 20px auto;
+    border-radius: 5px;
+    margin-top: -480px;
+
+}
+
+.searchform form {
+    display: flex;
+    flex-direction: column;
+}
+
+.searchform label {
+    margin-bottom: 10px;
+}
+
+.searchform input[type="date"],
+.searchform input[type="text"],
+.searchform input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.searchform input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #9332a4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.searchform input[type="submit"]:hover {
+    background-color: #9b5fa3;
+}
+
+
+
+
+
+
+
